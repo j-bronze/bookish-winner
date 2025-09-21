@@ -1,12 +1,25 @@
 package org.example;
 
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.printf("Hello and welcome!\n");
+        Pad sketchBook = new Pad();
 
-        for (int i = 1; i <= 5; i++) {
-           System.out.println("i = " + i);
-        }
+        sketchBook.padName = "SketchBook";
+        sketchBook.setPaper("mat");
+        sketchBook.setCover("flexible");
+        sketchBook.setBinding("spring");
+        sketchBook.setDensity(200);
+        sketchBook.setSheetsQuantity(80);
+        sketchBook.setWidth(210);
+        sketchBook.setHeight(297);
+        sketchBook.setPadWeight(sketchBook.getWidth(), sketchBook.getHeight(), sketchBook.getDensity(),
+                sketchBook.getSheetsQuantity());
+
+        System.out.println(sketchBook.getInfo());
+        System.out.println(sketchBook.getPadWeight());
+
+
     }
 }

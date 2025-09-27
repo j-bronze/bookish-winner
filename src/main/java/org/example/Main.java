@@ -7,11 +7,10 @@ public class Main {
         Pad sketchBook = new Pad();
 
         sketchBook.padName = "SketchBook";
-        sketchBook.setPaper("mat");
         sketchBook.setCover("flexible");
         sketchBook.setBinding("spring");
-        sketchBook.setDensity(200);
-        sketchBook.setSheetsQuantity(80);
+        sketchBook.setDensity(180);
+        sketchBook.setSheetsQuantity(48);
         sketchBook.setWidth(210);
         sketchBook.setHeight(297);
         sketchBook.setPadWeight(sketchBook.getWidth(), sketchBook.getHeight(), sketchBook.getDensity(),
@@ -21,5 +20,7 @@ public class Main {
         System.out.println(sketchBook.getPadWeight());
 
 
+
     }
+
 }

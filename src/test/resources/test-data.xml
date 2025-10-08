@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Testing" verbose="1" >
+    <test name="TestCalculation" >
+        <classes>
+            <class name="TestCalculation" />
+        </classes>
+    </test>
+
+    <test name="TestObjectConstructor">
+        <classes>
+            <class name="TestObjectConstructor"/>
+        </classes>
+    </test>
+</suite>
